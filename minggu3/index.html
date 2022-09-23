@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Belajar HTML 5 Multimedia</title>
+        <style>
+           
+
+                    .btn {
+                    border: 2px solid black;
+                    background-color: white;
+                    color: black;
+                    padding: 14px 28px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    }
+                  .warning {
+                    border-color: #ff9800;
+                    color: orange;
+                    }
+
+                    .warning:hover {
+                    background: #ff9800;
+                    color: white;
+                    }
+                    .success {
+                    border-color: #04AA6D;
+                    color: green;
+                    }
+
+                    .success:hover {
+                    background-color: #04AA6D;
+                    color: white;
+                    }
+                    .danger {
+                    border-color: #f44336;
+                    color: red;
+                    }
+
+                    .danger:hover {
+                    background: #f44336;
+                    color: white;
+                    }
+
+
+                    .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+        </style>
+    </head>
+    <body align="center" style="background-color:#cccccc ;">
+     
+          
+        
+        <h2>Menampilkan vidio di HTML5</h2>
+        <video id="myVideo" width="320" height="240" controls>
+            <source src="assets/vidio.mp4" type="video/mp4">
+          </video> <br>
+         <section style="margin-top: 20px;">
+            <button onclick="durasiVid()" type="button" class="btn warning bt_durasi">Durasi Video</button>
+            <button onclick="playVid()" type="button" class="btn success bt_play"> Play Video</button>
+            <button onclick="pauseVid()" type="button" class="btn danger bt_pause"> Pause Video</button>
+         </section>
+         <section style="margin-top:20px">
+          <h3>Play Vidio </h3>
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="assets/y2mate.com - Woro Widowati  Teteg Ati Official Music Live Dadi payung naliko udane teko.mp3" type="audio/mpeg">
+          
+          </audio>
+         </section>
+         <section>
+          <h4>File PDF</h4>
+        <embed type="application/pdf" src="assets/frontendRoadmaps.pdf" width="600" height="400"></embed>
+         </section>
+         <section>
+          <h3>Vidio Youtube</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yAzRlsI4h7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </iframe>
+         </section>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function durasiVid() {
+            alert(vid.duration);
+        }
+
+    </script>
+</html>
