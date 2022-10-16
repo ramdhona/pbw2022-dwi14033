@@ -101,10 +101,16 @@ hr {
     margin-top: 10px;
 }
 footer {
+   
     padding: 15px 0;
     background-color: #333;
     color: white;
     text-align: center;
+}
+.footer2 {
+    position:absolute;
+   bottom:0;
+   width:100%;
 }
 .contact form{
     margin-top: 30px;
